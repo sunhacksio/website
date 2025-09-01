@@ -1,2 +1,2 @@
 # website
-https://sunhacks.io
+https://2020.sunhacks.io
