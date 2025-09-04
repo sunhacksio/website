@@ -116,3 +116,23 @@ hr {
 .addMargin {
   margin: 1vh;
 }
+
+.sponsor-logo-base44 {
+  padding: 1.8rem 1rem;
+}
+
+.sponsor-logo-statefarm {
+  padding: 3.9rem 1rem;
+}
+
+.sponsor-logo-amazon {
+  padding: 1rem;
+}
+
+.sponsor-logo-gdms {
+  padding: 6.1rem 1rem;
+}
+
+.partner-logo-mlh {
+  padding: 1rem;
+}
