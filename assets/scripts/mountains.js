@@ -1,4 +1,4 @@
-var COLORS = ["#a96f9d", "#f0938c", "#fbbb8f", "#fff0bb"];
+var COLORS = ["#242424", "#3c3c3c", "#666666", "#a8a8a8"];
 
 (function () {
   var Mountain, MountainRange, dt, mountainRanges, sketch, baseHeigh;
