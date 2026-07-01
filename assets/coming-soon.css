@@ -60,31 +60,42 @@ a {
 }
 
 .logo-frame {
+  --logo-frame-size: min(100%, 15rem);
   position: relative;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  width: min(100%, 15rem);
-  aspect-ratio: 1 / 1;
+  width: var(--logo-frame-size);
+  height: var(--logo-frame-size);
   padding: 1rem;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image.logo-frame {
+  width: var(--logo-frame-size);
+  height: var(--logo-frame-size);
 }
 
 .logo-frame::before {
   content: "";
   position: absolute;
-  inset: -0.3rem;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 0.6rem);
+  aspect-ratio: 1 / 1;
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-top-color: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
-  animation: spin 9s linear infinite;
+  animation: spin-centered 9s linear infinite;
 }
 
 .logo-frame img {
   display: block;
   width: 68%;
-  height: 68%;
-  object-fit: contain;
+  height: auto;
+  flex: none;
 }
 
 .has-text-white {
@@ -473,6 +484,15 @@ img {
   }
 }
 
+@keyframes spin-centered {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 @keyframes spin-reverse {
   to {
     transform: rotate(-360deg);
@@ -503,6 +523,14 @@ img {
 @media (max-width: 768px) {
   .foreground {
     min-height: 100vh;
+  }
+
+  .hero-body.is-hidden-desktop .logo-frame {
+    --logo-frame-size: 8rem;
+  }
+
+  .hero-body.is-hidden-desktop .eyebrow {
+    margin-top: 0.45rem;
   }
 
   .coming-soon-hero .subtitle {
