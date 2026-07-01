@@ -64,7 +64,10 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: min(100%, 15rem);
+  aspect-ratio: 1 / 1;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .logo-frame::before {
@@ -75,6 +78,13 @@ a {
   border-top-color: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   animation: spin 9s linear infinite;
+}
+
+.logo-frame img {
+  display: block;
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
 }
 
 .has-text-white {
@@ -224,6 +234,10 @@ a {
   z-index: 2;
 }
 
+.site-footer {
+  background: #fff;
+}
+
 .main {
   margin-top: 5vh;
 }
@@ -248,6 +262,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 32%;
   filter: grayscale(1) contrast(1.12);
   border-radius: 10px;
   border-top-left-radius: 0;
