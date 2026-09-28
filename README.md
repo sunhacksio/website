@@ -1,6 +1,6 @@
 # sunhacks website
 
-Static site for [sunhacks.io](https://sunhacks.io). The `2026-dev` version announces the November 14–15, 2026 event at Student Pavilion, ASU Tempe Campus, with this year's camp theme.
+Static site for [sunhacks.io](https://sunhacks.io). The `2026-dev` version announces sunhacks 9.0 on November 14–15, 2026 at Student Pavilion, ASU Tempe Campus, with this year's camp theme.
 
 ## Local preview
 

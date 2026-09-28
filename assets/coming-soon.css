@@ -146,7 +146,7 @@ img {
 .brand img {
   flex: 0 0 44px;
 }
-.brand-year {
+.brand-edition {
   color: #c5ccb9;
   font-size: 0.85rem;
   font-weight: 500;
@@ -828,7 +828,7 @@ img {
   .brand {
     font-size: 1.2rem;
   }
-  .brand-year {
+  .brand-edition {
     font-size: 0.74rem;
   }
   .brand img {
@@ -1106,9 +1106,6 @@ img {
 @media (max-width: 380px) {
   .container {
     width: calc(100% - 32px);
-  }
-  .brand-year {
-    display: none;
   }
   .camp-hero h1 {
     gap: 8px;
