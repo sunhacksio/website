@@ -17,4 +17,4 @@ These web assets are optimized copies of artwork in the [2026 design folder](htt
 - The [2026 proposal](https://docs.google.com/presentation/d/1t2bWkpP4Q9vmU0AFHBMivcms_2jqE3A6_9rbq7KCz_E/edit) includes the camp concept. The newer [September social artwork](https://drive.google.com/file/d/1RJJ_-TxmdW56MYiJ0m-_RjhVOL37D_nA/view) and delivered prospectus/stickers establish the woodland theme used here. Site colors are sampled or adapted from that artwork, rather than reusing the 2025 palette.
 - Avenir/Avenir Next are requested as locally installed fonts; Segoe UI and the platform sans-serif are fallbacks. No licensed font files are redistributed.
 - Responsive WebP copies preserve transparency and artwork proportions. The small forest variant reduces mobile downloads. `assets/meta-image.jpg` is a 1200 × 630 rendering of the themed site hero for social sharing.
-- Event facts remain at the existing branch's confirmed level: November 2026, with exact dates, venue, registration, and schedule pending.
+- Confirmed event details: November 14–15, 2026 at Student Pavilion, ASU Tempe Campus. Registration and the schedule remain pending.
