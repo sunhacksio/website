@@ -11,6 +11,7 @@
   --muted: #596257;
   --line: #dcded0;
   --font: Avenir, "Avenir Next", "Segoe UI", sans-serif;
+  --header-height: 88px;
 }
 
 *,
@@ -102,7 +103,7 @@ img {
   color: var(--cream);
 }
 .header-inner {
-  min-height: 88px;
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,11 +165,14 @@ img {
 
 .camp-hero {
   position: relative;
+  display: grid;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
   isolation: isolate;
   overflow: hidden;
   background: var(--night);
   color: var(--cream);
-  border-bottom: 4px solid var(--gold);
 }
 .hero-landscape {
   position: absolute;
@@ -195,7 +199,39 @@ img {
   );
 }
 .hero-inner {
-  padding-block: 88px;
+  position: relative;
+  z-index: 1;
+  padding-block: 64px 144px;
+}
+.hero-waves {
+  position: absolute;
+  inset: auto 0 -1px;
+  width: 100%;
+  height: clamp(72px, 8vw, 120px);
+  pointer-events: none;
+}
+.wave-layer {
+  animation: wave-drift 28s linear infinite;
+}
+.wave-pine {
+  fill: var(--pine);
+  animation-delay: -8s;
+}
+.wave-gold {
+  fill: var(--gold);
+  animation-duration: 34s;
+  animation-direction: reverse;
+  animation-delay: -16s;
+}
+.wave-cream {
+  fill: var(--cream);
+  animation-duration: 22s;
+  animation-delay: -4s;
+}
+@keyframes wave-drift {
+  to {
+    transform: translateX(-1440px);
+  }
 }
 .hero-copy {
   max-width: 630px;
@@ -649,6 +685,9 @@ img {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --header-height: 104px;
+  }
   .container {
     width: calc(100% - 40px);
   }
@@ -656,7 +695,6 @@ img {
     padding-block: 64px;
   }
   .header-inner {
-    min-height: 78px;
     flex-wrap: wrap;
     gap: 0;
     padding-block: 12px;
@@ -689,7 +727,7 @@ img {
   }
   .hero-inner {
     padding-top: 40px;
-    padding-bottom: 310px;
+    padding-bottom: clamp(220px, 36vh, 310px);
   }
   .hero-copy {
     max-width: 100%;
@@ -896,5 +934,6 @@ img {
   *::before,
   *::after {
     transition: none !important;
+    animation: none !important;
   }
 }
