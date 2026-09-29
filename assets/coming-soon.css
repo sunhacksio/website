@@ -355,14 +355,6 @@ img {
   object-fit: cover;
   object-position: center 32%;
 }
-.camp-photo figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 17px 7px 8px;
-  font-size: 0.75rem;
-  font-weight: 800;
-}
 .about-story {
   padding-top: 6px;
 }
@@ -793,10 +785,6 @@ img {
   }
   .camp-photo > img {
     height: 320px;
-  }
-  .camp-photo figcaption {
-    font-size: 0.67rem;
-    padding: 12px 3px 5px;
   }
   .about-story {
     padding-top: 16px;
