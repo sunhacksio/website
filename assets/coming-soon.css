@@ -404,7 +404,7 @@ img {
 }
 .text-link {
   display: inline-flex;
-  gap: 30px;
+  gap: 8px;
   align-items: center;
   font-size: 0.85rem;
   font-weight: 800;
@@ -522,7 +522,7 @@ img {
 }
 .faq-mascots {
   width: 280px;
-  margin-top: -15px;
+  margin-top: 12px;
   margin-left: -20px;
 }
 .faq-list {
