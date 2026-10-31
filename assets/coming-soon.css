@@ -12,6 +12,7 @@
   --line: #dcded0;
   --font: Avenir, "Avenir Next", "Segoe UI", sans-serif;
   --header-height: 88px;
+  --mlh-badge-width: clamp(60px, 7vw, 100px);
 }
 
 *,
@@ -103,12 +104,25 @@ img {
   color: var(--cream);
 }
 .header-inner {
+  position: relative;
   min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  padding-right: calc(var(--mlh-badge-width) + 24px);
   border-bottom: 1px solid #ffffff24;
+}
+#mlh-trust-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: var(--mlh-badge-width);
+}
+#mlh-trust-badge img {
+  width: 100%;
 }
 .brand {
   display: inline-flex;
@@ -678,7 +692,7 @@ img {
 
 @media (max-width: 860px) {
   :root {
-    --header-height: 104px;
+    --header-height: 160px;
   }
   .container {
     width: calc(100% - 40px);
@@ -687,9 +701,14 @@ img {
     padding-block: 64px;
   }
   .header-inner {
-    flex-wrap: wrap;
-    gap: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--mlh-badge-width);
+    gap: 8px 24px;
     padding-block: 12px;
+    padding-right: 0;
+  }
+  .header-inner .brand {
+    grid-column: 1;
   }
   .brand {
     font-size: 1.2rem;
@@ -702,15 +721,18 @@ img {
     flex-basis: 36px;
   }
   .header-cta {
+    grid-column: 1;
+    justify-self: start;
     font-size: 0.75rem;
     gap: 12px;
     padding: 8px 12px;
   }
   .main-nav {
+    grid-column: 1 / -1;
     order: 3;
     width: 100%;
     justify-content: center;
-    margin: 8px 0 -4px;
+    margin: 8px 0 0;
     gap: 42px;
   }
   .main-nav a {
