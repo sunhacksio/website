@@ -691,7 +691,7 @@ img {
 }
 .partner-list {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: start;
   gap: 30px;
   margin: 34px 0 0;
@@ -1043,11 +1043,7 @@ img {
     padding-inline: 22px;
   }
   .partner-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
-  }
-  .partner-cso {
-    grid-column: 2;
   }
   .team-member {
     flex-basis: calc((100% - 48px) / 3);
@@ -1072,6 +1068,9 @@ img {
 }
 
 @media (max-width: 860px) {
+  .partner-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   :root {
     --header-height: 160px;
   }
@@ -1424,11 +1423,6 @@ img {
   }
   .partner-list li {
     font-size: 0.83rem;
-  }
-  .partner-cso {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - 22px) / 2);
   }
 }
 
