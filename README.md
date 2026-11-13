@@ -26,9 +26,9 @@ Keep unannounced details marked as coming soon until the organizing team confirm
 
 ## Schedule and sponsors
 
-The schedule is a static, abridged version of the [9.0 Run of Show](https://docs.google.com/spreadsheets/d/1YhSFn9QvkA8NSAmDWaHfWBWsC4fYGCnS14UoLwR9lhU/edit?gid=0#gid=0), reviewed November 12, 2026. Edit the two `.agenda` lists in `index.html` when event times change; there is no live spreadsheet dependency. Times are local to ASU Tempe (Arizona/MST, UTC−07:00).
+The schedule is a static, abridged version of the [9.0 Run of Show — Run of Show Updated](https://docs.google.com/spreadsheets/d/1YhSFn9QvkA8NSAmDWaHfWBWsC4fYGCnS14UoLwR9lhU/edit?gid=283639646#gid=283639646), reviewed November 13, 2026. Edit the two `.agenda` lists in `index.html` when event times change; there is no live spreadsheet dependency. Times are local to ASU Tempe (Arizona/MST, UTC−07:00).
 
-Only attendee-facing highlights are included. Internal setup, deliveries, staffing, and cleanup are omitted. Saturday's opening ceremony is 11:15 AM, confirmed by the organizer (the source originally said PM). Workshop and activity details are intentionally omitted. The schedule links to `https://links.sunhacks.io/livesite`, where the Notion livesite will provide exact workshop schedules and event updates. The sheet's `Public Summary` tab had a `#REF!` error, so the source is the `Run of Show` tab.
+Only attendee-facing highlights are included. Internal setup, deliveries, staffing, and cleanup are omitted. Saturday check-in begins at 9 AM, waitlist admission at 10 AM, opening ceremony and keynotes run 10–11:10 AM, hacking begins at 11:10 AM, and lunch runs 1–1:30 PM. Workshop and activity details are intentionally omitted. The schedule links directly to the [2026 Notion livesite](https://sunhacks.notion.site/sunhacks-2026-live-site), which provides exact workshop schedules and event updates. Use the updated tab above rather than the hidden original `Run of Show` tab or the derived `Public Summary`.
 
 Sponsor sizing is controlled by `.sponsor-lead` (JFFVentures), `.sponsor-major` (Amazon Tempe Town Lake Campus), `.sponsor-featured` (TinyFish and General Dynamics), and `.sponsor-supporting` (the remaining ten sponsors). Partners are a separate list beneath the sponsor cloud.
 
