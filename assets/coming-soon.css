@@ -691,7 +691,7 @@ img {
 }
 .partner-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 30px;
   margin: 34px 0 0;
@@ -749,6 +749,9 @@ img {
 .partner-mark-square img {
   width: 104px;
   max-height: 104px;
+}
+.partner-mark-fulton img {
+  width: 240px;
 }
 .partner-mark-gdg img {
   height: 90px;
@@ -1070,6 +1073,11 @@ img {
 @media (max-width: 860px) {
   .partner-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .partner-list > li:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 22px) / 2);
   }
   :root {
     --header-height: 160px;

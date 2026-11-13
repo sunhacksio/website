@@ -4,6 +4,7 @@ Retrieved November 12, 2026 from the organizations' own websites, ASU's official
 
 | Partner | Official source | Logo asset |
 | --- | --- | --- |
+| Ira A. Fulton Schools of Engineering at ASU | [ASU Engineering](https://engineering.asu.edu/) | [Official horizontal Fulton Schools logo](https://engineering.asu.edu/wp-content/uploads/sites/36/2020/10/fse-logo-2019-horizontal-color.jpg), linked by the ASU Engineering homepage → `fulton-schools.jpg` |
 | Software Developers Association at ASU (SoDA) | [thesoda.io](https://thesoda.io/) | [SVG wordmark](https://thesoda.io/logo/Soda_Logo_Dark_Mode.svg) → `soda.svg` |
 | Women in Computer Science at ASU (WiCS) | [asuwics.org](https://asuwics.org/) | [Current WiCS wordmark](https://asuwics.org/images/branding/wics-logo.png) → `wics.png` |
 | Hacker Devils at ASU | [ASU Student Hub](https://students.engineering.asu.edu/clubs/hacker-devils-hkd/) | [Club logo](https://students.engineering.asu.edu/wp-content/uploads/2024/01/hkd_logo.png) → `hacker-devils.png` |
